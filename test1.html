@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="advertisement.css">
+    <title>Document</title>
+    <body>
+
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="https://fpt123.net/uploads/images/thiet-ke-anh/thiet-ke-anh-banner-1.jpg" style="height:314px;width:1000px;">
+      
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="http://www.chothuemaybaohoaoxyspo2.com/assets/uploads/slides/images/banner-1-7738.jpg" style="height:314px;width:1000px;">
+
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="http://chothuexebantai.com/wp-content/uploads/2019/05/THUE-XE-BAN-TAI.png" style="height:314px;width:1000px;">
+    
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="https://cotrangquan.com/wp-content/uploads/2019/10/banner-co-trang-2.jpg" style="height:314px;width:1000px;">
+      
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="https://nhadatdautu24.com/wp-content/uploads/2019/10/banner-web-ngang-chothue.jpg" style="height:314px;width:1000px;">
+       
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+      
+    
+    </body>
+    </html> 
